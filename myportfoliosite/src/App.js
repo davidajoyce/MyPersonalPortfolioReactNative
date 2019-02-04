@@ -11,18 +11,18 @@ class App extends Component {
     <Layout>
         <Header title="Title" scroll>
             <Navigation>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
+                <Link to="/resume">Resume</Link>
+                <Link to="/aboutme">About Me</Link>
+                <Link to="/projects">Projects</Link>
+                <Link to="/contact">Contact</Link>
             </Navigation>
         </Header>
         <Drawer title="Title">
             <Navigation>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
-                <a href="/">Link</a>
+                <Link to="/resume">Resume</Link>
+                <Link to="/aboutme">About Me</Link>
+                <Link to="/projects">Projects</Link>
+                <Link to="/contact">Contact</Link>
             </Navigation>
         </Drawer>
         <Content>
