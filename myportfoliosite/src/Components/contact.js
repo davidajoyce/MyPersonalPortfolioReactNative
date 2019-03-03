@@ -20,17 +20,40 @@ class Contact extends Component{
               <h2>Contact Me</h2>
               <hr/>
 
-              <List>
-                <ListItem>
-                 <ListItemContent icon="person">Bryan Cranston</ListItemContent>
-                </ListItem>
-                <ListItem>
-                 <ListItemContent icon="person">Aaron Paul</ListItemContent>
-                </ListItem>
-                <ListItem>
-                 <ListItemContent icon="person">Bob Odenkirk</ListItemContent>
-                </ListItem>
-              </List>
+              <div className="contact-list">
+                <List>
+                  <ListItem>
+                   <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
+                   <i className="fa fa-phone-square" aria-hidden="true"/>
+                   +44 749 057 0890
+                   </ListItemContent>
+                  </ListItem>
+
+                  <ListItem>
+                   <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
+                   <i className="fa fa-fax" aria-hidden="true"/>
+                   +44 749 057 0890
+                   </ListItemContent>
+                  </ListItem>
+
+                  <ListItem>
+                   <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
+                   <i className="fa fa-envelope" aria-hidden="true"/>
+                   davidajoyce141@gmail.com
+                   </ListItemContent>
+                  </ListItem>
+
+                  <ListItem>
+                   <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton'}}>
+                   <i className="fa fa-skype" aria-hidden="true"/>
+                   MySkypeId
+                   </ListItemContent>
+                  </ListItem>
+
+                </List>
+              </div>
+
+
 
             </Cell>
           </Grid>
