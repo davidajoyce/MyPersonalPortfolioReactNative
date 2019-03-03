@@ -11,6 +11,8 @@ class Projects extends Component{
 
     if(this.state.activeTab === 0){
       return(
+        <div className="projects-grid">
+        {/*Project 1*/}
         <Card shadow={5} style={{minWidth:'450', margin: 'auto'}}>
           <CardTitle style={{color: '#fff', height: '176px', background:
           'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React Project #1</CardTitle>
@@ -26,6 +28,42 @@ class Projects extends Component{
             <IconButton name="share" />
           </CardMenu>
         </Card>
+
+        {/*Project 2*/}
+        <Card shadow={5} style={{minWidth:'450', margin: 'auto'}}>
+          <CardTitle style={{color: '#fff', height: '176px', background:
+          'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React Project #1</CardTitle>
+          <CardText>
+             This is some example text to fill the space cus cant think
+          </CardText>
+          <CardActions border>
+            <Button colored>Github</Button>
+            <Button colored>CodePen</Button>
+            <Button colored>LiveDemo</Button>
+          </CardActions>
+          <CardMenu style={{color: '#fff'}}>
+            <IconButton name="share" />
+          </CardMenu>
+        </Card>
+
+        {/*Project 3*/}
+        <Card shadow={5} style={{minWidth:'450', margin: 'auto'}}>
+          <CardTitle style={{color: '#fff', height: '176px', background:
+          'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React Project #1</CardTitle>
+          <CardText>
+             This is some example text to fill the space cus cant think
+          </CardText>
+          <CardActions border>
+            <Button colored>Github</Button>
+            <Button colored>CodePen</Button>
+            <Button colored>LiveDemo</Button>
+          </CardActions>
+          <CardMenu style={{color: '#fff'}}>
+            <IconButton name="share" />
+          </CardMenu>
+        </Card>
+
+        </div>
       )
     } else if(this.state.activeTab === 1){
       return(
@@ -52,13 +90,11 @@ class Projects extends Component{
               <Tab>MongoDB</Tab>
            </Tabs>
 
-           <section className="projects-grid">
-             <Grid className="projects-grid">
+             <Grid>
                <Cell col={12}>
                  <div className="content">{this.toggleCategories()}</div>
                </Cell>
              </Grid>
-           </section>
         </div>
       )
     }
